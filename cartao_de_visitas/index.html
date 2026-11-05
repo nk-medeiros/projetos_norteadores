@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visitas</title>
+
+    <!-- Estilo INTERNO -->
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #e9e4e0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #2b2b2b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 12px;
+        }
+
+        .cartao {
+            width: 100%;
+            max-width: 340px;
+            background: #ffffff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            border-radius: 14px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .cartao::before {
+            content: "";
+            display: block;
+            height: 70px;
+            background: #3d1414;
+        }
+
+        .foto {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            margin-top: -55px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 19px;
+            color: #3d1414;
+            margin: 16px 24px 4px 24px;
+        }
+
+        .atividade {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: #6b1f1f;
+            margin: 0 24px 20px 24px;
+        }
+
+        .informacoes {
+            border-top: 2px solid #3d1414;
+            padding: 18px 24px 4px 24px;
+            text-align: left;
+        }
+
+        .informacoes p {
+            font-family: Verdana, sans-serif;
+            font-size: 13.5px;
+            color: #2b2b2b;
+            margin: 0 0 8px 0;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            padding: 4px 24px 26px 24px;
+        }
+
+        .redes a {
+            font-size: 12.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: #3d1414;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        .redes a:hover { background: #2a0d0d; }
+
+        @media (max-width: 380px) {
+            .cartao { max-width: 92%; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cartao">
+
+        <!-- Estilo INLINE: tamanho da imagem alterado -->
+        <img src="image/perfil.jpeg" alt="Foto de perfil" class="foto"
+             style="width: 130px; height: 130px;">
+
+        <!-- Estilo INLINE: tipo de letra e cor da letra -->
+        <h1 style="font-family: 'Trebuchet MS', sans-serif; color: #8b1e1e;">
+            Nayara Karla Medeiros da Silva
+        </h1>
+
+        <p class="atividade" style="color: #4a4a4a;">
+            Estudante de Ciência da Computação
+        </p>
+
+        <div class="informacoes" style="background-color: #faf6f3;">
+            <p>📍 Recife - PE</p>
+            <p>📞 (81) 98858-1861</p>
+            <p>✉️ nayarakarla1310@gmail.com</p>
+        </div>
+
+        <div class="redes" style="background-color: #faf6f3;">
+            <a href="https://www.linkedin.com/in/nayara-medeiros-709918428/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/nk-medeiros" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

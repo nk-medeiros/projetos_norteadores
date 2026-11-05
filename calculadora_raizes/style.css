@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #2b2b2b;
+}
+
+.caixa {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 32px 28px;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  text-align: center;
+  color: #1d4ed8;
+}
+
+.formula {
+  margin: 0 0 24px 0;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #6b6b6b;
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+input {
+  width: 100%;
+  padding: 11px 10px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1d4ed8;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #ffffff;
+  background: #1d4ed8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.saida {
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.saida:not(:empty) {
+  padding: 14px 16px;
+}
+
+.saida p {
+  margin: 0 0 6px 0;
+}
+
+.saida.ok {
+  background: #eff6ff;
+  border: 1.5px solid #1d4ed8;
+}
+
+.saida.aviso {
+  background: #fffbeb;
+  border: 1.5px solid #d97706;
+}
+
+.saida.erro {
+  background: #fef2f2;
+  border: 1.5px solid #b91c1c;
+  color: #b91c1c;
+}
+
+.raiz {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.raiz.pequeno {
+  font-size: 15px;
+  color: #92400e;
+}

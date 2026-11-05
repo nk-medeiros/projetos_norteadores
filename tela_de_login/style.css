@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #2b2b2b;
+}
+
+.caixa {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 36px 30px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+  color: #1d4ed8;
+}
+
+.subtitulo {
+  margin: 0 0 24px 0;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.campo {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 11px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1d4ed8;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #ffffff;
+  background: #1d4ed8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.erro {
+  margin: 0 0 16px 0;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1.5px solid #b91c1c;
+  border-radius: 8px;
+}
+
+.sucesso {
+  margin: 12px 0 20px 0;
+  padding: 12px;
+  color: #166534;
+  background: #f0fdf4;
+  border: 1.5px solid #16a34a;
+  border-radius: 8px;
+}
+
+.voltar {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #ffffff;
+  background: #1d4ed8;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.voltar:hover {
+  background: #1e40af;
+}
+
+.dica {
+  margin: 20px 0 0 0;
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+/* ---------- PAINEL ---------- */
+.caixa.larga {
+  max-width: 520px;
+}
+
+h2 {
+  margin: 8px 0 12px 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1d4ed8;
+}
+
+.tabela {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.tabela th {
+  padding: 8px 10px;
+  color: #ffffff;
+  background: #1d4ed8;
+}
+
+.tabela td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabela td.ok {
+  color: #166534;
+  font-weight: 700;
+}
+
+.tabela td.falha {
+  color: #b91c1c;
+  font-weight: 700;
+}
